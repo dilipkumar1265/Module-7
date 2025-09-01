@@ -16,9 +16,27 @@ To write a Python program to demonstrate **Head Recursion** by finding and print
 7. **Stop**
 
 ## 💻 PROGRAM:
+```
+def sum_digits(num,accumulator=0):
 
-ADD CODE HERE
+    if num==0:
+        return accumulator
+    if num>0:
+        return sum_digits(num//10,accumulator+num%10)
+    else:
+        return "Not defined"
+    
+
+num= int(input())
+
+print(sum_digits(num))
+```
+
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/841a7e85-fe9f-4ea1-9794-992dd70eb898)
+
+
 
 ## RESULT
+Program executed successfully.
